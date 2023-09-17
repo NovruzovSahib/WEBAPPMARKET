@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEBAPPMARKET", "WEBAPPMARKET\WEBAPPMARKET.csproj", "{411F17B7-936A-467F-8D0D-5115EB29773A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{411F17B7-936A-467F-8D0D-5115EB29773A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411F17B7-936A-467F-8D0D-5115EB29773A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411F17B7-936A-467F-8D0D-5115EB29773A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411F17B7-936A-467F-8D0D-5115EB29773A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20BD7EA9-36ED-471C-A08E-070B9C011A9F}
+	EndGlobalSection
+EndGlobal

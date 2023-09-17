@@ -1,0 +1,30 @@
+﻿@model IEnumerable<WEBAPPMARKET.Models.PRODUCTS>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<table class="table table-bordered table-hover table-responsive">
+    <thead>
+        <tr>
+            <td>Product Id</td>
+            <td>Product</td>
+            <td>Quantity</td>
+            <td>Price</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ID</td>
+                <td>@product.PRODUCT</td>
+                <td>@product.QUANTITY</td>
+                <td>@product.PRICE</td>
+                <td><a asp-action="Delete" asp-route-id="@product.ID" class="btn btn-danger">Delete</a>
+                    <a asp-action="Update" asp-route-id="@product.ID" class="btn btn-warning">Update</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Insert" class="btn btn-primary">Insert Data</a>
