@@ -2,13 +2,14 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-<table class="table table-bordered table-hover table-responsive">
+<table class="table table-bordered table-hover table-responsive " style="text-align:center">
     <thead>
         <tr>
             <td>Product Id</td>
             <td>Product</td>
             <td>Quantity</td>
             <td>Price</td>
+            <td>Operation</td>
         </tr>
     </thead>
     <tbody>
@@ -19,7 +20,7 @@
                 <td>@product.PRODUCT</td>
                 <td>@product.QUANTITY</td>
                 <td>@product.PRICE</td>
-                <td><a asp-action="Delete" asp-route-id="@product.ID" class="btn btn-danger">Delete</a>
+                <td style="width:20%"><a asp-action="Delete" asp-route-id="@product.ID" class="btn btn-danger">Delete</a>
                     <a asp-action="Update" asp-route-id="@product.ID" class="btn btn-warning">Update</a>
                 </td>
             </tr>

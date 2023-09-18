@@ -20,3 +20,6 @@ html {
 body {
   margin-bottom: 60px;
 }
+.btn-primary {
+    width: 100%;
+}
