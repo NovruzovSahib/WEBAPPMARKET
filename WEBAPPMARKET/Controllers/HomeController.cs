@@ -7,12 +7,10 @@ namespace WEBAPPMARKET.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly MYDBCONTEXT _context;
 
-        public HomeController(ILogger<HomeController> logger, MYDBCONTEXT context)
+        public HomeController(MYDBCONTEXT context)
         {
-            _logger = logger;
             _context = context;
         }
 
@@ -63,6 +61,7 @@ namespace WEBAPPMARKET.Controllers
             return View(productid);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Update(PRODUCTS updatedProduct)
         {
             if (ModelState.IsValid)
