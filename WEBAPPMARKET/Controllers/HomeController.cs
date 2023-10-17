@@ -28,6 +28,7 @@ namespace WEBAPPMARKET.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Insert(PRODUCTS product1) 
         {
             if (ModelState.IsValid)
